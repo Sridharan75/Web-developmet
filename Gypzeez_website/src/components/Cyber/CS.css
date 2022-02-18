@@ -1,0 +1,559 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Orienta', sans-serif;
+}
+
+#nav-bar{
+    top:0;
+    z-index: 10;
+}
+.navbar{
+    background-image:  linear-gradient(to right,#000244, #000445, #000546, #000244	);
+    padding: 0 !important;
+}
+.navbar-brand img{
+    height:70px;
+    padding-left: 20px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    margin-top: -10px;
+    color:		#007fff !important;
+    font-weight: 600;
+    font-size: 20px;
+    float: right;
+    text-align: left;
+}
+
+.nav-item .dropdown-menu{
+    border: none !important;
+    background-image:  linear-gradient(to right,#000244, #000445, #000546, #000244	);
+ }
+ .nav-item .dropdown-menu .dropdown-item{
+     font-size: 18px;
+     text-align: right;
+     padding: 15px;
+ }
+ .nav-item .dropdown-menu .dropdown-item:hover{
+     background:none;
+ }
+ .fa-bars{
+     color: rgb(172, 155, 155);
+     font-size: 50px;
+ }
+ .fa-bars:hover{
+     border-color: 2px solid #fff;
+ }
+ .navbar-toggler{
+     outline: none !important;
+ }
+
+
+
+#banner .promo-title{
+    padding-top: 20%;
+    font-size: 50px;
+    color:rgb(199, 191, 191);
+    font-family: 'Gabriela', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#banner .text-justify{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color:#9898b1;
+    font-family: 'Orienta', sans-serif;
+}
+#banner img{
+    padding-left: 20%;
+    padding-top: 20%;
+    height: 700px;
+    width:auto;
+}
+
+#more {
+    display: none;
+}
+#more1 {
+    display: none;
+}
+#more2 {
+    display: none;
+}
+
+#myBtn, #myBtn1, #myBtn2{
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: -80%;
+    background-color:#1f305e;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 5s;
+}
+
+#service1{
+    padding-top: 100px;
+}
+#service1 .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+#service1 .card-title{
+    color:#1f305e;
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Domine', serif;
+}
+#service1 .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color:#367588;
+    padding-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#service1 .card-img-top{
+    height: 300px;
+    width: auto;
+}
+
+#service3{
+    padding-top: 50px;
+}
+#service3 .card-title{
+    color:#1f305e;
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Domine', serif;
+}
+#service3 .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color:#367588;
+    padding-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#service3 .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+#service3 img{
+    height: 250px;
+    width: auto;
+    margin-top: 50px;
+}
+
+#service5{
+    padding-top: 50px;
+}
+#service5 .card-title{
+    color:#1f305e;
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Domine', serif;
+}
+#service5 .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color:#367588;
+    padding-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#service5 .card-img-top{
+    height: 300px;
+    width: auto;
+}
+#service5 .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+
+#develop{
+    padding-top: 70px;
+}
+#develop .card{
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+#develop .title{
+    padding-top: 20px;
+    color:#1f305e;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#develop h3{
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#1f305e;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+#develop .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color:#367588;
+    padding-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#dev .card{
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+#dev .card h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+#dev .card-body img{
+    height: 200px;
+    width: auto;
+    margin-right: 50px;
+}
+#dev button{
+    margin-top: 10px;
+    margin-left: 90px;
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color:#1f305e;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#dev .popup-view{
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#dev .popup-view.active{
+    opacity: 1;
+    visibility: visible;
+}
+#dev .popup-card{
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+#dev .popup-card img{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+#dev .popup-card .info{
+    z-index: 2;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px  ;
+}
+#dev .popup-card .close-btn{
+    color: #555;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+#dev .popup-card .info p{
+    font-size: 15px;
+    margin: 10px;
+}
+
+@media (max-width: 900px){
+    #dev .popup-card{
+        flex-direction: column;
+        width: 550px;
+        height: auto;
+    }
+    #dev .popup-card img{
+        z-index: 3;
+        width: 100%;
+        height: 200px;
+        transform: translateY(0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #dev .popup-card .info{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    #dev .popup-card .info p{
+        margin: 5px;
+        font-size: 18px;
+    }
+    #dev .popup-card .close-btn{
+        z-index: 4;
+    }
+}
+
+#footer{
+    padding-top: 50px;
+}
+#footer .social .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10%;
+    color:#aaaaaa;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+#footer .content{
+    margin-top: 20px;
+}
+#footer .content .fa{
+    color:#aaaaaa;
+    padding: 20px;
+}
+#footer .content .text{
+    font-size:1.0625rem;
+    font-weight:500;
+    padding-left:-30px;
+    color: #aaaaaa;
+}
+
+#footer hr{
+    align-items: center;
+    width: 850px;
+    border: 1px solid #aaaaaa;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#footer .copyright{
+    padding-bottom: 10px;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #banner img {
+        padding-left: 10px;
+        padding-top: 10%;
+        margin-top: 55%;
+        height: 350px;
+        width: auto;
+    }
+    #banner .promo-title{
+        padding-top: 10%;
+    }
+    #banner .text-justify{
+        padding-top: 1px;
+        font-size: 18px;
+    }
+
+    #myBtn,#myBtn1,#myBtn2{
+        padding: 8px;
+        border-radius: 10px;
+        margin-left: -70%;
+        color: #fff;
+        border: 0px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Josefin Sans', sans-serif;
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 10px;
+        transition: 5s;
+    }
+    #dev .card{
+       height: 400px;
+    }
+
+    #dev .card-body img{
+        height: 100px;
+        width: auto;
+    }
+    
+    #dev button{
+        margin-top: 35px;
+        margin-left: 20px;
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 10px;
+       
+        color: #fff;
+        border: 0px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    #dev .b1{
+        margin-top: 40px;
+        margin-left: 20px;
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 10px;
+        
+        color: #fff;
+        border: 0px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    #dev .bk3{
+        height: 100px;
+        width: auto;
+        margin-top: 25px;
+        margin-left: -20px;
+    }
+    #service1 .card-img-top{
+        height: 250px;
+        width: auto;
+        margin-top: 30px;
+    }
+
+    #service3 .card-img-top{
+        height: 150px;
+        width: auto;
+        margin-top: 200px;
+    }
+
+    #service5 .card-img-top{
+        height: 250px;
+        width: auto;
+        margin-top: 30px;
+    }
+    
+    #footer .content .fa{
+        margin-left: 0;
+    }
+    #footer .social .fa{
+        
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+    #footer hr{
+        margin-left: 30px;
+        width: 600px;
+    }
+}
+
+
+
+@media (min-width: 360px) and (max-width: 640px) {
+    #banner .promo-title{
+        margin-top: -20px;
+        font-size: 40px;
+        position: absolute;
+        z-index: 1;
+        padding-left: 10px;
+    }
+    #banner .text-justify{
+        padding-left: 10px;
+        position: absolute;
+        margin-top: 50%;
+        z-index: 1;
+        font-weight: 700;
+        padding-right: 5px;
+    }
+    #banner img{
+        margin-left: -150px;
+        padding-top: 70%;
+        z-index: 1;
+        opacity: 0.55;
+        height: 700px;
+    }
+    #develop{
+        padding-top: 120px;
+    }
+    #dev button{
+        margin-top: 10px;
+        margin-left: 60px;
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 10px;
+        
+        color: #fff;
+        border: 0px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .card-body #myBtn, #myBtn1, #myBtn2{
+        margin-left: 10px;
+    }
+    #footer .social .fa{
+        
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #footer .content{
+        margin-left: 10px;
+    }
+    #footer .content .fa{
+        margin-left: 0;
+    }
+    #footer hr{
+        width: 300px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 736px){
+    #footer hr{
+        width: 480px;
+        margin-left:15px;
+    }
+}

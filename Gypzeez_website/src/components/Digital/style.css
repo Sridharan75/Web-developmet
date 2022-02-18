@@ -1,0 +1,601 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Orienta', sans-serif;
+    overflow-x: hidden;
+}
+
+#nav-bar{
+    top:0;
+    z-index: 10;
+}
+.navbar{
+    background-image:  linear-gradient(to right,	#04040d, #111235, #22256d, #282b80);
+    padding: 0 !important;
+}
+.navbar-brand img{
+    height:70px;
+    padding-left: 20px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    margin-top: -10px;
+    color:		#007fff !important;
+    font-weight: 600;
+    font-size: 20px;
+    float: right;
+    text-align: left;
+}
+
+.nav-item .dropdown-menu{
+    border: none !important;
+    background-image:  linear-gradient(to right,	#04040d, #111235, #22256d, #282b80);
+ }
+ .nav-item .dropdown-menu .dropdown-item{
+     font-size: 18px;
+     text-align: right;
+     padding: 15px;
+ }
+ .nav-item .dropdown-menu .dropdown-item:hover{
+     background:none;
+ }
+ .fa-bars{
+     color: rgb(172, 155, 155);
+     font-size: 50px;
+ }
+ .fa-bars:hover{
+     border-color: 2px solid #fff;
+ }
+ .navbar-toggler{
+     outline: none !important;
+ }
+
+
+
+#banner .promo-title{
+    padding-top: 20%;
+    font-size: 60px;
+    color:rgb(199, 191, 191);
+    font-family: 'Gabriela', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#banner .text-justify{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color:	#9898b1;
+    font-family: 'Orienta', sans-serif;
+}
+#banner .text-center{
+    padding-top: 30px;
+}
+#banner img{
+    height: 600px;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+#clould{
+    padding-top: 10%;  
+}
+#clould .card{
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+#clould .promo-title{
+    color: 	#1f305e;
+    font-family: 'Gabriela', serif;
+    font-weight:900;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+#clould .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color:	#367588;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+    font-family: 'Orienta', sans-serif;
+}
+
+#develop{
+    padding-top: 50px;
+}
+#develop h3{
+    font-size: 25px;
+    font-family: 'Gabriela', serif;
+    font-weight: 600;
+    color: #367588;
+    letter-spacing: 1px;
+}
+#develop .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+
+#develop .popup-btn{
+    z-index: 2;
+    color: #fff;
+    background: #1f305e;
+    transform: translateX(-50%);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0px;
+    outline:none;
+    margin-top: 20px;
+    margin-left: 140px;
+    font-family: 'Orienta', sans-serif;
+
+}
+#develop img{
+    height: 200px;
+    width: auto;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+#develop .popup-view{
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+#develop .popup-view.active{
+    opacity: 1;
+    visibility: visible;
+}
+#develop .popup-card{
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+    border: 2px solid #007fff;
+    border-radius: 20px;
+}
+#develop .popup-card img{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin-top: 50px;
+}
+#develop .popup-card .info{
+    z-index: 2;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px  ;
+}
+#develop .popup-card .close-btn{
+    color: #555;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+#develop .popup-card .info p{
+    font-size: 15px;
+    margin: 10px;
+}
+
+@media (max-width: 900px){
+    #develop .popup-card{
+        flex-direction: column;
+        width: 550px;
+        height: auto;
+    }
+    #develop .popup-card img{
+        z-index: 3;
+        width: 100%;
+        height: 200px;
+        transform: translateY(0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #develop .popup-card .info{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    #develop .popup-card .info p{
+        margin: 5px;
+        font-size: 18px;
+    }
+    #develop .popup-card .close-btn{
+        z-index: 4;
+    }
+}
+
+#social{
+    padding-top: 10%;
+}
+#social .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+#social .promo-title{
+    font-size: 50px;
+    color: #1f305e;
+    font-family: 'Gabriela', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#social .text-justify{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #367588;
+    font-family: 'Orienta', sans-serif;
+}
+
+#search{
+    padding-top: 10%;  
+}
+#search .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+#search .promo-title{
+    color: 	#1f305e;
+    font-family: 'Gabriela', serif;
+    font-weight:900;
+    text-transform: uppercase;
+}
+#search .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color:	#367588;
+    font-family: 'Orienta', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+#develop .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+
+#service1{
+    padding-top: 50px;
+}
+#service1 .card-title{
+    color: 	#1f305e;
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Gabriela', serif;
+}
+#service1 .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color: #367588;
+    padding-top: 20px;
+    font-family: 'Orienta', sans-serif;
+}
+#service1 .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+
+#service2{
+    padding-top: 50px;
+}
+#service2 .card-title{
+    color: 	#1f305e;
+    font-weight: 600;
+    padding-top:20px;
+    font-size: 40px;
+    font-family: 'Gabriela', serif;
+}
+#service2 .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color: #367588;
+    padding-top: 20px;
+    font-family: 'Orienta', sans-serif;
+}
+#service2 .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+
+#service3{
+    padding-top: 50px;
+}
+#service3 .card-title{
+    color: 	#1f305e;
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Gabriela', serif;
+}
+#service3 .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color: #367588;
+    padding-top: 20px;
+    font-family: 'Orienta', sans-serif;
+}
+#service3 .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+
+#service4{
+    padding-top: 50px;
+}
+#service4 .card-title{
+    color: 	#1f305e;
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Gabriela', serif;
+}
+#service4 .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color: #367588;
+    padding-top: 20px;
+    font-family: 'Orienta', sans-serif;
+}
+#service4 .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+
+#service5{
+    padding-top: 50px;
+}
+#service5 .card-title{
+    color: 	#1f305e;
+    font-weight: 600;
+    padding-top:20px;
+    font-size: 40px;
+    font-family: 'Gabriela', serif;
+}
+#service5 .text-justify{
+    font-size: 18px;
+    font-weight: 500;
+    color: #367588;
+    padding-top: 20px;
+    font-family: 'Orienta', sans-serif;
+}
+#service5 .card{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    border-radius:25px;
+}
+
+#footer{
+    padding-top: 50px;
+}
+#footer .social .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10%;
+    color:#aaaaaa;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+#footer .content{
+    margin-top: 20px;
+}
+#footer .content .fa{
+    color:#aaaaaa;
+    padding: 20px;
+}
+#footer .content .text{
+    font-size:1.0625rem;
+    font-weight:500;
+    padding-left:-30px;
+    color: #aaaaaa;
+}
+
+#footer hr{
+    align-items: center;
+    width: 850px;
+    border: 1px solid #aaaaaa;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#footer .copyright{
+    padding-bottom: 10px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #banner img {
+        padding-left: 10px;
+        padding-top: 10%;
+        margin-top: 55%;
+        height: 325px;
+        width: auto;
+    }
+
+    #develop .card-body img{
+        height: 150px;
+        width: auto;
+        padding-right: 75%;
+    }
+
+    #develop .popup-btn{
+        z-index: 2;
+        color: #fff;
+        background: #5393fd;
+        transform: translateX(-50%);
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 10px 25px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: 0px;
+        outline:none;
+        margin-top: 20px;
+        margin-left: 80px;
+        font-family: 'Orienta', sans-serif;
+    
+    }
+    #service1 .card-img-top{
+        height: 50px;
+        
+    }
+    #footer .content .fa{
+        margin-left: 0;
+    }
+    #footer .social .fa{
+        
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+    #footer hr{
+        margin-left: 30px;
+        width: 600px;
+    }
+
+}
+
+
+
+@media (min-width: 411px) and (max-width: 731px) {
+    #footer .content .fa {
+        margin-left: 0%;
+    }
+
+    #footer hr{
+        margin-left: 30px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    #banner .promo-title{
+        margin-top: -10px;
+        font-size: 40px;
+        position: absolute;
+        z-index: 1;
+        padding-left: 10px;
+        font-family: 'Gabriela', serif;
+    }
+    #banner .text-justify{
+        padding-left: 10px;
+        position: absolute; 
+        margin-top: 40%;
+        z-index: 1;
+        font-weight: 700;
+        margin-top: 180px;
+        padding-right: 5px;
+        font-family: 'Orienta', sans-serif;
+    }
+    #banner img{
+        width: 350px;
+        padding-top:35%;
+        z-index: 1;
+        opacity: 0.35;
+        height: 500px;
+    }
+
+    #develop .card-body img{
+        height: 150px;
+        width: auto;
+        padding-right: 15%;
+    }
+
+    
+    #develop .popup-btn{
+        z-index: 2;
+        color: #fff;
+        background: #5393fd;
+        transform: translateX(-50%);
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 10px 25px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: 0px;
+        outline:none;
+        margin-top: 20px;
+        margin-left: 120px;
+        font-family: 'Orienta', sans-serif;
+    
+    }
+    #footer .social .fa{
+        
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #footer .content{
+        margin-left: 10px;
+    }
+    #footer .content .fa{
+        margin-left: 0;
+    }
+    #footer hr{
+        width: 300px;
+        margin-left: 15px;
+    }
+}
+@media (min-width: 414px) and (max-width: 736px){
+    #footer hr{
+        width: 480px;
+        margin-left:15px;
+    }
+}
+
+
+
