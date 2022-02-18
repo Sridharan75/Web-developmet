@@ -1,0 +1,2 @@
+#0c0116 -blue
+#fd4d5a -pink

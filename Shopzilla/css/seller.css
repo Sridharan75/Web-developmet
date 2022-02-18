@@ -1,0 +1,184 @@
+.file-upload {
+  background-color: #ffffff;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+  
+.file-upload-click {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #0c0116;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #0c0116;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+  
+.file-upload-click:hover {
+  background: #fd4d5a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+  
+.file-upload-click:active {
+  border: 0;
+  transition: all .2s ease;
+}
+  
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+  
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+  
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px dashed #0c0116;
+  position: relative;
+}
+  
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #fd4d5a;
+  border: 4px dashed #0c0116;
+}
+  
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+  
+.drag-text {
+  text-align: center;
+}
+  
+#drg {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #0c0116;
+  padding: 60px 0;
+}
+  
+.file-upload-image {
+  max-height: 100px;
+  max-width: 100px;
+  margin: auto;
+  padding: 20px;
+}
+  
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+  
+.remove-image:hover {
+  background: #fd4d5a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+  
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.seller{
+  padding: 20px;      
+}
+
+/* Styling the Form (Color, Padding, Shadow) */
+form {
+  background-color: #fff;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+ 
+/* Styling form-control Class */
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+}
+ 
+/* Styling form-control input,select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-family: inherit;
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+ 
+/* Styling form-control Radio button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+ 
+/* Styling Button */
+button {
+  background-color: #0c0116;
+  color: #fff;
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 21px;
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.postButton:hover{
+  background-color: #fd4d5a;
+}
+
+.subTitle{
+  text-align: center;
+  color: #0c0116;
+  font-size: 16px;
+}
+
+.btn-search{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
