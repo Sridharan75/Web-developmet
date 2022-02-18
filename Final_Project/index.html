@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <title>Twitter - Home Page</title>
+
+    <style>
+        *,
+        *::after,
+        *,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        p,
+        h1,
+        a,
+        h2,
+        h3,
+        span,
+        li {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 92vh 8vh;
+        }
+
+        /*Left - box properties*/
+        .container .left-box {
+            background-color: #1da1f2;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .left-box ul li {
+            list-style-type: none;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 50px 0;
+            font-weight: bold;
+            color: white;
+        }
+
+        .container .left-box ul li i {
+            margin-right: 10px;
+            font-size: 22px;
+        }
+
+        /*End of Left - box properties*/
+
+        /*right - box properties*/
+        .container .right-box {
+            background-color: rgb(21, 32, 43);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .right-box .card {
+            min-width: 300px;
+            padding: 0 120px;
+        }
+
+        .container .right-box .card .head {
+            display: flex;
+        }
+
+        #logo {
+            color: #ffffff;
+            font-size: 2.5em;
+        }
+
+        .container .right-box .card h1 {
+            color: #ffffff;
+            line-height: 38px;
+            font-size: 28px;
+            margin-bottom: 70px;
+            width: 380px;
+        }
+
+        .container .right-box .card p {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /*End of right - box properties*/
+
+        /*bottom - box properties*/
+        .container .bottom-box {
+            background-color: rgb(21, 32, 43);
+            grid-column: 1/ -1;
+        }
+
+        .container .bottom-box ul {
+            text-align: center;
+        }
+
+        .container .bottom-box ul li a {
+            color: darkgray;
+            text-decoration: none;
+        }
+
+        .container .bottom-box ul li a:hover {
+            color: darkgray;
+            text-decoration: underline;
+        }
+
+
+        .container .bottom-box ul li {
+            font-size: 13px;
+            display: inline-block;
+            color: darkgray;
+            margin: 0 5px;
+        }
+
+        /*End of bottom - box properties*/
+
+
+
+        /*Button*/
+        button.btn {
+            display: block;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px 16px;
+            border-radius: 100px;
+            font-weight: bold;
+        }
+
+        button.block {
+            width: 400px;
+            margin-bottom: 1rem;
+        }
+
+        button.primary {
+            background-color: #1da1f2;
+            color: #ffffff;
+        }
+
+        button.outline {
+            background-color: rgb(21, 32, 43);
+            color: #1da1f2;
+            border: 1px solid #1da1f2;
+        }
+
+        button.primary:hover {
+            background-color: #1982c4;
+        }
+
+        button.outline:hover {
+            background-color: #1da0f228;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-flow: row wrap-reverse;
+                overflow: visible;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body style="background-color: rgb(21, 32, 43);">
+
+</body>
+<div class="container">
+
+    <div class="left-box">
+        <ul>
+            <li>
+                <i class="fas fa-search"></i>
+                Follow your interests.
+            </li>
+
+            <li>
+                <i class="fas fa-user-friends"></i>
+                Hear what people are talking about.
+            </li>
+
+            <li>
+                <i class="far fa-comment"></i>
+                Join the conversation.
+            </li>
+        </ul>
+    </div>
+
+    <div class="right-box">
+        <div class="card">
+            <div class="head">
+                <i class="fab fa-twitter" id="logo"></i>
+            </div>
+            <h1>See what’s happening in the world right now</h1>
+            <p>Join Twitter today.</p>
+            <button class="btn primary block">Sign Up</button>
+            <button class="btn outline block">Log in</button>
+        </div>
+    </div>
+
+    <div class="bottom-box">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Ads info</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Brand</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Businesses</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Settings</a></li>
+            <li>© 2020 Twitter, Inc.</li>
+        </ul>
+    </div>
+</div>
+
+</html>
